@@ -38,6 +38,15 @@ export default defineAgent({
     );
 
     agent.start(ctx.room, participant);
+
+    const llmStream = agent.llm.chat({
+      chatCtx: new llm.ChatContext().append({
+        role: llm.ChatRole.ASSISTANT,
+        text: 'Introduce yourself as a helpful agent that will listen and respond.',
+      }),
+    });
+
+    await agent.say(llmStream);
   },
 });
 

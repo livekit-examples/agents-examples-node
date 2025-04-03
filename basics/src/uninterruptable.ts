@@ -39,11 +39,15 @@ export default defineAgent({
     );
 
     agent.start(ctx.room, participant);
-    agent.on(pipeline.VPAEvent.USER_STARTED_SPEAKING, async () => {
-      await agent.say(
-        "I'm sorry, I must interrupt you. I'm not interruptable. Allow me to tell you a long and boring story.",
-      );
+
+    const llmStream = agent.llm.chat({
+      chatCtx: new llm.ChatContext().append({
+        role: llm.ChatRole.USER,
+        text: "Say something somewhat long and boring so I can test if you're interruptable.",
+      }),
     });
+
+    await agent.say(llmStream, false);
   },
 });
 
