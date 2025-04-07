@@ -19,6 +19,12 @@ A LiveKit Agent that can answer SIP calls using Twilio as the SIP provider. The 
 
 See the [SIP Agent README](./sip-agent/README.md) for setup and running instructions.
 
+### [SIP Make a Call](./sip/make-a-call)
+
+This project demonstrates how to have a LiveKit agent make an outbound phone call using LiveKit's telephony capabilities. It creates a room, connects an agent, and initiates a SIP call to a specified phone number.
+
+See the [SIP Make a Call README](./sip/make-a-call/README.md) for setup and running instructions.
+
 ## Getting Started
 
 Each project has its own README with specific setup instructions. In general, you'll need:
