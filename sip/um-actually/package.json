@@ -1,7 +1,7 @@
 {
-  "name": "agents-examples-node-sip-agent",
+  "name": "agents-examples-node-sip-um-actually",
   "version": "0.0.0",
-  "description": "A simple example to have a LiveKit Agent answer a SIP call",
+  "description": "A LiveKit Agent that hosts a game of 'Um, Actually' with contestants that call in, using OpenAI's capabilities to process and respond to voice calls",
   "engines": {
     "node": ">=22.0.0"
   },
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/livekit-examples/agents-examples-node/issues"
   },
-  "homepage": "https://github.com/livekit-examples/agents-examples-node/sip-agent#readme",
+  "homepage": "https://github.com/livekit-examples/agents-examples-node/sip/um-actually#readme",
   "scripts": {
     "start": "dotenvx run -f .env.local -- tsx src/agent.ts dev",
     "setup:twilio": "dotenvx run -f .env.local -- tsx src/setup-twilio.ts",

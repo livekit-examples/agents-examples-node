@@ -1,7 +1,6 @@
-# 📞 LiveKit SIP Agent Example 🤖
+# LiveKit Agent Examples - SIP Um, Actually
 
-This project demonstrates how to create a LiveKit Agent that can answer SIP calls using Twilio as the SIP provider.
-The agent uses OpenAI's capabilities to process and respond to voice calls and hosts a game of ["Um, Actually"](https://www.dropout.tv/um-actually) with the caller.
+This project demonstrates how to create a LiveKit Agent that can answer SIP calls using Twilio as the SIP provider. The agent uses OpenAI's capabilities to process and respond to voice calls and hosts a game of ["Um, Actually"](https://www.dropout.tv/um-actually) with the caller.
 
 ## Prerequisites 📋
 
@@ -28,7 +27,7 @@ The agent uses OpenAI's capabilities to process and respond to voice calls and h
 
    ```bash
    git clone https://github.com/livekit-examples/agents-examples-node.git
-   cd agents-examples-node/sip-agent
+   cd agents-examples-node/sip/um-actually
    ```
 
 2. Install dependencies:

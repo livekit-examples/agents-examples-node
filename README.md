@@ -13,17 +13,17 @@ Basic examples demonstrating core functionality of LiveKit Agents:
 
 See the [Basics README](./basics/README.md) for setup and running instructions.
 
-### [SIP Agent](./sip-agent)
-
-A LiveKit Agent that can answer SIP calls using Twilio as the SIP provider. The agent hosts a game of "Um, Actually" with callers, using OpenAI's capabilities to process and respond to voice calls.
-
-See the [SIP Agent README](./sip-agent/README.md) for setup and running instructions.
-
 ### [SIP Make a Call](./sip/make-a-call)
 
 This project demonstrates how to have a LiveKit agent make an outbound phone call using LiveKit's telephony capabilities. It creates a room, connects an agent, and initiates a SIP call to a specified phone number.
 
 See the [SIP Make a Call README](./sip/make-a-call/README.md) for setup and running instructions.
+
+### [SIP Um, Actually](./sip/um-actually)
+
+A LiveKit Agent that hosts a game of "Um, Actually" with contestants that call in, using OpenAI's capabilities to process and respond to voice calls.
+
+See the [SIP Um, Actually README](./sip/um-actually/README.md) for setup and running instructions.
 
 ## Getting Started
 
