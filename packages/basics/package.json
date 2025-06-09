@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Basic LiveKit Agent examples for Listen and Respond and Uninterruptible agents",
   "engines": {
-    "node": ">=22.0.0"
+    "node": ">=20.0.0"
   },
   "type": "module",
   "license": "Apache-2.0",

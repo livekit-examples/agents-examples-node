@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "A LiveKit Agent that hosts a game of 'Um, Actually' with contestants that call in, using OpenAI's capabilities to process and respond to voice calls",
   "engines": {
-    "node": ">=22.0.0"
+    "node": ">=20.0.0"
   },
   "type": "module",
   "license": "Apache-2.0",
