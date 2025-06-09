@@ -1,0 +1,30 @@
+{
+  "name": "@node-agents-examples/basics",
+  "version": "0.0.0",
+  "description": "Basic LiveKit Agent examples for Listen and Respond and Uninterruptible agents",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "type": "module",
+  "license": "Apache-2.0",
+  "author": "Michael Solati <michael.solati@livekit.io>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/livekit-examples/node-agents-examples.git"
+  },
+  "bugs": {
+    "url": "https://github.com/livekit-examples/node-agents-examples/issues"
+  },
+  "homepage": "https://github.com/livekit-examples/node-agents-examples/basics#readme",
+  "scripts": {
+    "start:listen-and-respond": "dotenvx run -f .env.local -- tsx src/listen-and-respond.ts dev",
+    "start:uninterruptable": "dotenvx run -f .env.local -- tsx src/uninterruptable.ts dev",
+    "lint": "npm-run-all -s lint:*",
+    "lint:typescript": "tsc --noEmit",
+    "lint:gts": "gts lint",
+    "fix": "gts fix"
+  },
+  "devDependencies": {
+    "@dotenvx/dotenvx": "^1.39.0"
+  }
+}

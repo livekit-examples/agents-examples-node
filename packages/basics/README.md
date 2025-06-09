@@ -33,8 +33,8 @@ npm run start:uninterruptable
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/livekit-examples/agents-examples-node.git
-   cd agents-examples-node/basics
+   git clone https://github.com/livekit-examples/node-agents-examples.git
+   cd node-agents-examples/packages/basics
    ```
 
 2. Install dependencies:

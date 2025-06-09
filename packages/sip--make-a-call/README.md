@@ -15,8 +15,8 @@ This project demonstrates how to have a LiveKit agent make an outbound phone cal
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/livekit-examples/agents-examples-node.git
-   cd agents-examples-node/sip/make-a-call
+   git clone https://github.com/livekit-examples/node-agents-examples.git
+   cd node-agents-examples/packages/sip--make-a-call
    ```
 
 2. Install dependencies:

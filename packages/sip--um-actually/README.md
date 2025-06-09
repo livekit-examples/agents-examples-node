@@ -23,38 +23,34 @@ This project demonstrates how to create a LiveKit Agent that can answer SIP call
 
 ## Setup 🛠️
 
-1. Clone the repository:
+1. Clone and setup the repository:
 
    ```bash
-   git clone https://github.com/livekit-examples/agents-examples-node.git
-   cd agents-examples-node/sip/um-actually
-   ```
-
-2. Install dependencies:
-
-   ```bash
+   git clone https://github.com/livekit-examples/node-agents-examples.git
+   cd node-agents-examples
    npm install
+   cd packages/sip--um-actually
    ```
 
-3. Create a `.env.local` file with your API keys:
+2. Create a `.env.local` file with your API keys:
 
    ```bash
    cp .env.example .env.local
    ```
 
-4. Configure your environment variables in `.env.local`:
+3. Configure your environment variables in `.env.local`:
    - `LIVEKIT_API_KEY`: Your LiveKit API key
    - `LIVEKIT_API_SECRET`: Your LiveKit API secret
    - `LIVEKIT_URL`: Your LiveKit server URL
    - `LIVEKIT_SIP_URI`: Your LiveKit SIP URI
    - `OPENAI_API_KEY`: Your OpenAI API key
-   - `TWILIO_PHONE_NUMBER`: Your Twilio phone number
+   - `TWILIO_PHONE_NUMBER`: Your Twilio phone number (e.g. +12345678901)
    - `TWILIO_ACCOUNT_SID`: Your Twilio account SID
    - `TWILIO_AUTH_TOKEN`: Your Twilio auth token
    - `TWILIO_SIP_USERNAME`: Your Twilio SIP username (You may end up generating this after running the setup script)
    - `TWILIO_SIP_PASSWORD`: Your Twilio SIP password (You may end up generating this after running the setup script)
 
-5. Set up Twilio:
+4. Set up Twilio:
 
    ```bash
    npm run setup:twilio
@@ -62,7 +58,7 @@ This project demonstrates how to create a LiveKit Agent that can answer SIP call
 
    This will follow the steps outlined in the LiveKit [Create and configure a Twilio SIP trunk](https://docs.livekit.io/sip/quickstarts/configuring-twilio-trunk/) guide. You will need to have a Twilio account and a phone number. Be sure to follow the steps in the [Inbound calls with Twilio Voice](https://docs.livekit.io/sip/accepting-calls-twilio-voice/) guide after running the setup script.
 
-6. Set up LiveKit:
+5. Set up LiveKit:
 
    ```bash
    npm run setup:livekit
