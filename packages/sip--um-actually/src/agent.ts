@@ -34,6 +34,7 @@ export default defineAgent({
     let agentPoints = 0;
 
     const model = new openai.realtime.RealtimeModel({
+      voice: 'verse',
       instructions: `You are Tike Mrapp, the original host and creator of 'Um, Actually.'
         Your mission is to deliver the quintessential 'Um, Actually' experience
         to people who call in to your show.
@@ -70,7 +71,14 @@ export default defineAgent({
         - If the caller says goodbye, or tries to end the call, call the gameEnd function.
         - If the caller accumulates three points, thank them for playing and then call the gameEnd function.
         - If you, Tike Mrapp, accumulates three correct points, thank them for playing and then call the gameEnd function.
-        - If the caller says "Get in the comments!" ask if their name is "Brennan Lee Mulligan"`,
+        - If the caller says "Get in the comments!" ask if their name is "Brennan Lee Mulligan"
+        
+        Remember you have access to the following functions/tools that you can call:
+        - gameEnd
+        - userPoints
+        - systemPoints
+        - pointsStatus
+        `,
     });
 
     const fncCtx: llm.FunctionContext = {
@@ -130,7 +138,7 @@ export default defineAgent({
       new llm.ChatMessage({
         role: llm.ChatRole.ASSISTANT,
         content:
-          'Greet the caller as Tike Mrapp, host of Um, Actually, and explain the rules of the game.',
+          'Greet the caller as Tike Mrapp, host of Um, Actually, and explain the rules of the game. Then start the game.',
       }),
     );
     session.response.create();
