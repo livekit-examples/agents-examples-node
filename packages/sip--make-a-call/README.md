@@ -4,7 +4,7 @@ This project demonstrates how to have a LiveKit agent make an outbound phone cal
 
 ## Prerequisites 📋
 
-- Node.js (v22 or higher) 💻
+- Node.js (v20 or higher) 💻
 - [A LiveKit server instance 📡](https://docs.livekit.io/home/self-hosting/server-setup/)
 - [An OpenAI API key 🔑](https://platform.openai.com/api-keys)
 - LiveKit API Key, Secret, and URL 🌐
@@ -16,22 +16,21 @@ This project demonstrates how to have a LiveKit agent make an outbound phone cal
 
    ```bash
    git clone https://github.com/livekit-examples/node-agents-examples.git
-   cd node-agents-examples/packages/sip--make-a-call
-   ```
 
-2. Install dependencies:
+   cd node-agents-examples
 
-   ```bash
    npm install
+
+   cd packages/sip--make-a-call
    ```
 
-3. Create a `.env.local` file with your API keys:
+2. Create a `.env.local` file with your API keys:
 
    ```bash
    cp .env.example .env.local
    ```
 
-4. Configure your environment variables in `.env.local`:
+3. Configure your environment variables in `.env.local`:
 
    - `LIVEKIT_API_KEY`: Your LiveKit API key
    - `LIVEKIT_API_SECRET`: Your LiveKit API secret
@@ -39,13 +38,13 @@ This project demonstrates how to have a LiveKit agent make an outbound phone cal
    - `OPENAI_API_KEY`: Your OpenAI API key
    - `SIP_OUTBOUND_TRUNK_ID`: Your SIP outbound trunk ID
 
-5. In one terminal instance, start the agent:
+4. In one terminal instance, start the agent:
 
    ```bash
    npm run start:agent
    ```
 
-6. In another terminal instance, make a call:
+5. In another terminal instance, make a call:
 
    ```bash
    npm run start:call <us_phone_number_to_call>
@@ -61,4 +60,4 @@ This project demonstrates how to have a LiveKit agent make an outbound phone cal
 
 ## License 📝
 
-[Apache-2.0](../LICENSE.md)
+[Apache-2.0](../../LICENSE.md)

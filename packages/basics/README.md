@@ -4,7 +4,7 @@ This directory contains basic examples of LiveKit Agents that demonstrate differ
 
 ## Prerequisites 📋
 
-- Node.js (v22 or higher) 💻
+- Node.js (v20 or higher) 💻
 - [A LiveKit server instance 📡](https://docs.livekit.io/home/self-hosting/server-setup/)
 - [An OpenAI API key 🔑](https://platform.openai.com/api-keys)
 - [Deepgram API key 💬](https://developers.deepgram.com/docs/create-additional-api-keys)
@@ -34,22 +34,21 @@ npm run start:uninterruptable
 
    ```bash
    git clone https://github.com/livekit-examples/node-agents-examples.git
-   cd node-agents-examples/packages/basics
-   ```
 
-2. Install dependencies:
-
-   ```bash
+   cd node-agents-examples
+   
    npm install
+   
+   cd packages/basics
    ```
 
-3. Create a `.env.local` file with your API keys:
+2. Create a `.env.local` file with your API keys:
 
    ```bash
    cp .env.example .env.local
    ```
 
-4. Configure your environment variables in `.env.local`:
+3. Configure your environment variables in `.env.local`:
 
    - `LIVEKIT_API_KEY`: Your LiveKit API key
    - `LIVEKIT_API_SECRET`: Your LiveKit API secret
@@ -57,8 +56,8 @@ npm run start:uninterruptable
    - `OPENAI_API_KEY`: Your OpenAI API key
    - `DEEPGRAM_API_KEY`: Your Deepgram API key
 
-5. Run the examples using the npm scripts in the [Examples section above](#examples).
+4. Run the examples using the npm scripts in the [Examples section above](#examples).
 
 ## License 📝
 
-[Apache-2.0](../LICENSE.md)
+[Apache-2.0](../../LICENSE.md)

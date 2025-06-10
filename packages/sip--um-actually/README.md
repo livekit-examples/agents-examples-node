@@ -4,7 +4,7 @@ This project demonstrates how to create a LiveKit Agent that can answer SIP call
 
 ## Prerequisites 📋
 
-- Node.js (v22 or higher) 💻
+- Node.js (v20 or higher) 💻
 - [A LiveKit server instance 📡](https://docs.livekit.io/home/self-hosting/server-setup/)
 - A Twilio account with SIP trunking capabilities ☎️
 - [An OpenAI API key 🔑](https://platform.openai.com/api-keys)
@@ -27,8 +27,11 @@ This project demonstrates how to create a LiveKit Agent that can answer SIP call
 
    ```bash
    git clone https://github.com/livekit-examples/node-agents-examples.git
+
    cd node-agents-examples
+   
    npm install
+   
    cd packages/sip--um-actually
    ```
 
@@ -96,4 +99,4 @@ The agent maintains a running score throughout the game, tracking points for bot
 
 ## License 📝
 
-[Apache-2.0](../LICENSE.md)
+[Apache-2.0](../../LICENSE.md)

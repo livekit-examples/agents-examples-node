@@ -7,10 +7,13 @@ import {
   WorkerOptions,
 } from '@livekit/agents';
 import * as openai from '@livekit/agents-plugin-openai';
+import dotenv from 'dotenv';
 import {RoomServiceClient} from 'livekit-server-sdk';
 import {fileURLToPath} from 'url';
 
 import {verifyEnv} from './env.js';
+
+dotenv.config({path: '.env.local'});
 
 const {
   LIVEKIT_API_KEY = '',
